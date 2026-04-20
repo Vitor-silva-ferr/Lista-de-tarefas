@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+
+    --corbackground: #ddd;
+    --corbranca: #FFFFFF;
+    --corblue: #0000FF;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--corbackground);
+
+}
+
+#app {
+    width: 60%;
+    height: 50%;
+    max-width: 910px;
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: var(--corbranca);
+    border: 5px solid var(--corblue);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.726);
+}
+
+#app h1 {
+    font-size: 40px;
+
+}
+
+#app span {
+    color: var(--corblue);
+}
+
+#app i {
+    margin-left: 15px;
+}
+
+#div-s {
+    height: 1px;
+    width: 90%;
+    margin: 15px 0px;
+    background-color: #ddd;
+}
+
+#registertask {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 4px;
+}
+
+#app input {
+    width: 70%;
+    padding: 15px;
+    margin-right: 10px;
+    border: 2px solid var(--corblue);
+    border-radius: 4px;
+}
+
+#app button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: var(--corblue);
+    border-radius: 4px;
+    color: var(--corbranca);
+    font-weight: bold;
+}
+
+#app h2 {
+    width: 100%;
+    padding-left: 20px;
+    margin: 30px;
+    font-size: 25px;
+}
+
+#app ul {
+    width: 100%;
+}
+
+#app li {
+    margin: 10px 20px;
+    background-color: var(--corbackground);
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+#app li:hover {
+    transform: translateY(-3px);
+}
+
+#app li button {
+    background-color: red;
+}
+
+#app li i {
+    margin-left: 0;
+}
+
+#msg {
+    display: flex;
+    text-align: center;
+    padding: 35px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    width: 250px;
+    border-radius: 4px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    color: var(--corbranca);
+    font-size: 10px;
+    display: none;
+}
+
+#msg2 {
+    display: flex;
+    text-align: center;
+    padding: 35px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    width: 250px;
+    border-radius: 4px;
+    height: 100px;
+    background-color: rgb(25, 182, 25); 
+    color: var(--corbranca);
+    font-size: 10px;
+    display: none;
+}

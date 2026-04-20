@@ -1,0 +1,29 @@
+📋 To-Do List (Lista de Tarefas)
+
+Projeto desenvolvido com o objetivo de praticar conceitos fundamentais de **JavaScript**, como manipulação do DOM, eventos e armazenamento local.
+
+ 🚀 Funcionalidades
+
+* ✅ Adicionar novas tarefas
+* ❌ Remover tarefas
+* 💾 Salvamento automático no navegador (LocalStorage)
+* ⚠️ Mensagem dinâmica caso o usuário tente adicionar uma tarefa vazia
+
+🛠️ Tecnologias utilizadas
+
+* HTML5
+* CSS3
+* JavaScript
+
+Interface simples e funcional, focada em usabilidade e organização de tarefas.
+
+📚 Aprendizados
+
+Durante o desenvolvimento deste projeto, foram trabalhados:
+
+* Manipulação do DOM
+* Eventos (onclick)
+* Criação dinâmica de elementos
+* Uso de LocalStorage
+* Validação de input
+* Feedback visual para o usuário
