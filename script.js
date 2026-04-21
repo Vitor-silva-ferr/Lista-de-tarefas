@@ -1,10 +1,10 @@
-let inputElement = document.querySelector("#app input");
+let inputElement = document.getElementById("campo")
 let buttonElement = document.querySelector("#app button");
 let listElement = document.querySelector("#app ul");
 let msgElement = document.querySelector("#msg")
 let msgElement2 = document.querySelector("#msg2")
 
-let tarefas = JSON.parse(localStorage.getItem("@tarefas") || [])
+let tarefas = JSON.parse(localStorage.getItem("@tarefas")) || []; 
 
 
 function renderTarefas() {
@@ -40,15 +40,15 @@ function adicionarTarefas() {
         setTimeout(() => {
             msgElement.style.display = 'none'
         }, 3000)
-        return false;
+        // return false;
     }
     else {
 
         let novaTarefa = inputElement.value;
 
         tarefas.push(novaTarefa);
-        inputElement.value = '';
 
+        inputElement.value = '';
 
         msgElement2.style.display = 'block'
 
@@ -65,13 +65,13 @@ function adicionarTarefas() {
 function deletarTarefa(procurar) {
 
     tarefas.splice(procurar, 1)
-    renderTarefas()
-    salvarTarefas()
+    renderTarefas();
+    salvarTarefas();
 }
 
 function salvarTarefas() {
     localStorage.setItem("@tarefas", JSON.stringify(tarefas))
-    renderTarefas()
+    renderTarefas();
 }
 
-buttonElement.onclick = adicionarTarefas; 
+
